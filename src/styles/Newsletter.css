@@ -1,0 +1,141 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+  background-color: #000; /* Dark background */
+}
+
+/* Notification Section */
+.notification-container {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 50vh;
+  text-align: left;
+  margin: 50px auto; /* Center the banner */
+  width: 90%; /* Full width on small screens */
+  border-radius: 15px;
+  background: linear-gradient(to right, #45139cab, #3a5ac2bf);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding-left: 40px; /* Shift contents to the right */
+}
+
+.notification-container h1 {
+  font-size: 2rem; /* Responsive font size */
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.notification-container p {
+  font-size: 1rem; /* Responsive font size */
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+.email-input-section {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.email-input-section input {
+  padding: 8px 25px;
+  border: 1px solid #ddd;
+  border-radius: 40px;
+  flex: 1;
+  background: rgb(207, 201, 201);
+}
+
+/* Button Container */
+.button3-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 1px;
+  background: linear-gradient(to right, #06b6d4, #a855f7);
+  z-index: 1;
+}
+
+.button3-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.button3 {
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: white;
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease;
+}
+
+.button3:hover {
+  background-color: #1f2937;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+  .notification-container {
+    height: auto; /* Allow auto height on smaller screens */
+  }
+
+  .notification-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .notification-container p {
+    font-size: 0.9rem;
+  }
+
+  .email-input-section {
+    flex-direction: column; /* Stack input and button on smaller screens */
+    align-items: stretch;
+  }
+
+  .email-input-section input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button3-container {
+    width: 100%; /* Full width button */
+  }
+
+  .button3 {
+    width: 100%; /* Full width button */
+  }
+}
+
+/* Media query for desktop site mode on mobile */
+@media (max-width: 1024px) and (min-width: 600px) {
+  .notification-container {
+    height: 30vh; /* Reduce height for desktop site mode */
+  }
+
+  .button3 {
+    font-size: 0.7rem; /* Reduce button text size */
+    padding: 6px 16px; /* Adjust padding */
+  }
+}

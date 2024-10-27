@@ -1,0 +1,185 @@
+/* General Styling */
+body {
+  margin: 0;
+  background-color: #000000;
+  color: #e0e0e0;
+  font-family: 'Questrial', sans-serif;
+  font-weight: 400;
+}
+
+
+/* Features Section */
+.lask-features h2 {
+  font-size: 3.5rem;
+  /* color: #ffffff; */
+  letter-spacing: 2px;
+  font-weight: 700;
+  background: white;
+  /* background: linear-gradient(8deg, #24282d, #ffffff); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom:-40px;
+}
+
+/* Feature List */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Add spacing between the feature items */
+  width: 100%; /* Full width for responsiveness */
+  max-width: 1300px; /* Limit maximum width */
+  margin: 50px auto; /* Center with margin */
+}
+
+/* Feature-item styling */
+.feature-item {
+  display: flex;
+  flex-direction: column; /* Stacks the description and video vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text inside the box */
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 100%; /* Set width to 90% of the parent container */
+  max-width: 1500px; /* Optional: limit the maximum width */
+  margin-top: 40px; /* Center the feature item horizontally */
+  padding-top: 20px;
+  /* background: #056159; */
+  /* background: #053561; */
+  background: linear-gradient(145deg,#61619f,#09243d) ;
+}
+
+/* Features Section */
+.lask-features {
+  text-align: center;
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center child elements */
+}
+
+
+/* Hover effect for feature items */
+.feature-item:hover {
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.3); /* Enhanced shadow */
+}
+
+/* Make the video occupy more space */
+.feature-video {
+  width: 100%; /* Ensure it takes full width */
+  max-width: 1000px; /* Set max width to ensure it looks good on large screens */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+/* Hover Effect for Video */
+.feature-video:hover {
+  transform: scale(1.05); /* Slightly larger scale for luxurious feel */
+  box-shadow: 0 10px 40px rgba(79, 116, 129, 0.5); /* Glow on hover */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Feature Description */
+.feature-description {
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Add spacing between text and video */
+}
+
+/* Feature Heading Styling */
+.feature-description h3 {
+  font-size: 1.75rem; /* Medium-sized heading */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Feature Description Text */
+.feature-description p {
+  font-size: 1.5rem; /* Large, readable font */
+  line-height: 1.8; /* Improve readability */
+  color: #e0e0e0;
+  margin: 0;
+}
+
+/* Optional: adjust padding of the overall container */
+.lask-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Gradient background for the button container */
+.button-container {
+  position: relative;
+  display: inline-flex;
+  margin-top: 2rem; /* mt-8 */
+}
+
+/* Gradient background */
+.button-background {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-radius: 9999px; /* Full rounded corners */
+  background: linear-gradient(to right, #06b6d4, #a855f7); /* Cyan to purple gradient */
+  transition: all 0.2s ease; /* Smooth transition for shadow */
+}
+
+/* Shadow effect on hover */
+.button-background:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow on hover */
+}
+
+/* Button styling */
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  font-size: 1rem; /* text-base */
+  font-weight: normal;
+  color: white; /* Text color */
+  background-color: transparent; /* Make button background transparent */
+  border: none; /* No border */
+  border-radius: 9999px; /* Fully rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  z-index: 10; /* Ensure button is on top of the gradient */
+}
+
+/* Responsive Styling */
+@media (min-width: 500px) {
+  /* Styles for small screens */
+  .feature-item {
+    flex-direction: column; /* Align items side by side */
+    /* gap: 20px; Space between description and video */
+    font-size: small;
+  }
+
+  .feature-description h3 {
+    font-size: 1.1rem; /* Responsive font size for heading */
+  }
+
+  .feature-description p {
+    font-size: 0.8rem; /* Responsive font size for description */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Styles for medium to large screens */
+  .lask-features h2 {
+    font-size: 4rem; /* Larger heading */
+  }
+
+  .feature-description h3 {
+    font-size: 2.0rem; /* Even larger heading for large screens */
+  }
+
+  .feature-description p {
+    font-size: 1.3rem; /* Responsive font size for description */
+  }
+}
+
+
+

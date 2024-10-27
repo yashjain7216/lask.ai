@@ -1,0 +1,194 @@
+/* Container for the form and video sections */
+
+.main-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #ffffff; /* Custom color, adjust as needed */
+    font-weight: bold;
+    margin-bottom: 60px;;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    /* border: 4px solid #06b6d4;
+    border-radius: 30px; */
+ 
+}
+
+/* Video section styling */
+.video-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.background-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+    min-height: 100vh;
+    
+}
+
+
+/* Left section with the form */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* border: 2px solid transparent; Initial transparent border */
+    border-image: linear-gradient(to right, #06b6d4, #a855f7); 
+    border-image-slice: 1; /* Ensures gradient applies only to the border */
+    /* border-radius: 10px; Optional: Add rounded corners */
+    /* background-color: #333; Keeps the form background separate */
+    justify-content: center;
+    width: 100%;
+    max-width: 300px; /* Increase the max width */
+    /* min-height: 600px; Set a minimum height for the form */
+    align-items: center;
+}
+.form-section form {
+    max-width: 300px; /* Increase the max width */
+    min-height: 400px; 
+    align-items: center;
+    justify-content: center;
+    }
+
+
+.form-section p.tagline {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Register button with gradient background */
+.regbtn {
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(to right, #06b6d4, #a855f7);
+    padding: 10px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect for the button */
+.form-section form button:hover {
+    background-color: #1f2937; /* Darker color on hover */
+}
+
+/* Button background effect */
+.form-section form .button-background {
+    position: absolute;
+    inset: 0;
+    border-radius: 9999px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add shadow effect when hovering over the container */
+.form-section form:hover .button-background {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+}
+
+
+.form-section form input::placeholder {
+    color: #999;
+}
+
+.form-section form input:focus {
+    outline: none;
+    border-color: #000000; 
+}
+
+.form-section form p {
+    color: red;
+    font-size: 0.9em;
+}
+
+
+/* Custom Google Login Button */
+.custom-google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: linear-gradient(to right, #4285F4, #34A853, #FBBC05, #EA4335); */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* .custom-google-button:hover {
+    background: linear-gradient(to right, #357ae8, #2c9f46, #e2a600, #c33d2e);
+} */
+
+.google-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.google-button-text {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Login link style */
+.login-link {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #fff;
+}
+.login-link a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
